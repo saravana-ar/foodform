@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>food form</title>
+</head>
+<body>
+    <h2 style="color: blue; text-decoration: underline; padding: 10px 10px 10px 10px;">Form Details:</h2>
+    <form style= "margin: 20px 10px 10px 20px; color: orangered;"id="userForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br><hr>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br><hr>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" required><br><hr>
+
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" required><br><hr>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br><hr>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" required><br><hr>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" required><br><hr>
+
+        <label for="foodChoice">Choose at least 2 foods:</label>
+        <input type="checkbox" name="foodChoice" value="briyani">briyani
+        <input type="checkbox" name="foodChoice" value="full meals">full meals
+        <input type="checkbox" name="foodChoice" value="vareity rice">vareity rice
+        <input type="checkbox" name="foodChoice" value="mini meals">mini meals
+        <input type="checkbox" name="foodChoice" value="porota">porota<br><hr>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2 style="color: blue; text-decoration: underline; padding: 10px 10px 10px 10px;">User Information</h2>
+    <table cellspacing="10px" cellpading="10px" id="userInfoTable">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>State</th>
+                <th>Country</th>
+                <th>Food Choice</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
